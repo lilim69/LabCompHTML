@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Laboratorio Interactuando</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <h1>Encuesta de Intereses</h1>
+
+  <div class="encuesta">
+    <button onclick="votar('web')">Diseño Web</button>
+    Votos: <span id="votos-web">0</span>
+    <br><br>
+    <button onclick="votar('js')">JavaScript</button>
+    Votos: <span id="votos-js">0</span>
+    <br><br>
+    <button onclick="votar('bd')">Bases de Datos</button>
+    Votos: <span id="votos-bd">0</span>
+  </div>
+
+  <hr>
+
+  <h1>Carrito de Compras</h1>
+
+  <div class="carrito">
+    <div class="producto">
+      <span>Producto A</span> - Precio: $<span id="precio-a">20</span>
+      <button onclick="agregarAlCarrito('Producto A', 20)">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <span>Producto B</span> - Precio: $<span id="precio-b">25</span>
+      <button onclick="agregarAlCarrito('Producto B', 25)">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <span>Producto C</span> - Precio: $<span id="precio-c">15</span>
+      <button onclick="agregarAlCarrito('Producto C', 15)">Agregar al carrito</button>
+    </div>
+
+    <div class="resumen">
+      <p>Items totales: <span id="total-items">0</span></p>
+      <p>Total a pagar: $<span id="total-precio">0</span></p>
+      <button onclick="vaciarCarrito()">Vaciar carrito</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
